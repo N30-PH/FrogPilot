@@ -1,8 +1,27 @@
 # Honda City EXL 2025 — candidata FrogPilot
 
-**Candidata experimental para revisão e testes. Instalação bloqueada até auditoria do aparelho e plano de recuperação. Não validada para condução.**
+**Candidata experimental instalada e observada em bancada em 01/10/2026. Reconhecimento no veículo e condução ainda não validados nesta candidata.**
 
-Preparada em 30/09/2026. Repositório: N30-PH/FrogPilot, branch `FrogPilot-City-7G`.
+Preparada em 30/09/2026 e instalada em bancada em 01/10/2026. Repositório: N30-PH/FrogPilot, branch `FrogPilot-City-7G`.
+
+## Instalação observada no aparelho do proprietário
+
+Commit instalado: [`51ccaf8fa6706c841c783c17e7c787616d916d08`](https://github.com/N30-PH/FrogPilot/commit/51ccaf8fa6706c841c783c17e7c787616d916d08). As atualizações posteriores deste README são documentação; não representam atualização automática do aparelho.
+
+- comma 3X: AGNOS 10.1/A → **12.8/B**, sete imagens verificadas antes da escrita e sete partições verificadas integralmente após a escrita. Manifesto idêntico ao [oficial comma/openpilot v0.10.0](https://github.com/commaai/openpilot/blob/v0.10.0/system/hardware/tici/agnos.json). Boot e retorno por SSH confirmados.
+- Instalação completa prebuilt, origem N30-PH/FrogPilot, branch própria e versão-base exibida **0.10.3**. Código antigo preservado em outra pasta; nenhum reset de instalação/treinamento solicitado pelo procedimento.
+- Aplicação Panda TRES atualizada uma vez, sem gravar bootloader. Binário distribuído: SHA256 `497d3625db564a31eada75f382da25eb2970069bc43cce74d4a6e82902eac708`. Assinatura de identificação relida por uma conexão independente e igual à esperada; isso não é uma certificação de segurança física.
+- **8 verificações adicionais passaram no Python 3.12.3 nativo do Comma**, importando o matcher completo da candidata: correspondência exata única, prioridade do resultado exato e seis casos negativos de firmware inválido. Usam o mesmo fixture publicado; nenhuma ECU foi consultada em bancada.
+- Observação inicial: UI, manager, hardwared e pandad em execução; nenhum processo que deveria rodar ausente, temperatura verde, Panda noOutput, sem ignição/controle/faults e contadores CAN zerados. Sem tráfego do carro, isso não valida comunicação em uso.
+- Assistência e identificação forçada desligadas; cache de identificação desconsiderado para a primeira verificação. Atualizador bloqueado no inicializador para manter a revisão fixada.
+- Corrigido apenas o formato do metadado InstallDate, preservando sua data/hora original sem inventar fuso. Nenhum ganho de torque, controle longitudinal ou centralização alterado.
+
+O contador SPI cresceu durante a observação. O código correspondente ao firmware (`b5801ef9c2d5eb545a106ebd42b9579ab65d2fa1`) também conta consultas normais VERSION como erro; cinco leituras controladas acrescentaram exatamente uma unidade cada. Isso explica essas cinco unidades e **não demonstra a origem de todos os incrementos**. O contador isolado não foi convertido em diagnóstico de defeito nem em aprovação de comunicação.
+
+O proprietário dispensou cópias adicionais de segurança durante a preparação. Artefatos já completos e a instalação antiga foram preservados, mas **não existe backup externo integral nem rollback físico ensaiado nesta execução**. Retorno de Git não restaura AGNOS/Panda. Nenhum dado pessoal bruto ou credencial é publicado.
+
+**Próxima verificação:** veículo estacionado, assistência desligada, confirmar reconhecimento automático e preservar os logs de identificação/CAN/Panda. Não inferir segurança de condução somente do nome reconhecido.
+
 
 ## Base e alteração
 
@@ -42,7 +61,7 @@ Blob do arquivo validado: `564c5b5740835f5cd054e2814a3d6d2914603596`.
 SHA256: `9936d586b4e95c98e8972f940ff66e8edf5d4443d5ff369ea67a08c7062d7100`.
 Detalhes em [validation.json](validation.json).
 
-**Não executados:** importação/inicialização integral do runtime, CI Linux/ARM64 completa, build no Comma, verificação física Panda/EPS, teste no veículo. Os fallbacks fuzzy específicos de todas as marcas não receberam uma suíte exaustiva. A primeira tentativa local faltava o módulo CAN do próprio catálogo Volkswagen; a dependência de fonte foi adicionada sem mudar o código funcional e a execução completa passou.
+**Limites atuais:** runtime de bancada e metadados/assinatura Panda foram verificados após a instalação; CI Linux/ARM64 completa, nova compilação no Comma, resposta física EPS e teste no veículo não foram executados. Os fallbacks fuzzy específicos de todas as marcas não receberam uma suíte exaustiva. A primeira tentativa local faltava o módulo CAN do próprio catálogo Volkswagen; a dependência de fonte foi adicionada sem mudar o código funcional e a execução completa passou.
 
 ## Reproduzir no computador
 
@@ -55,9 +74,9 @@ Os scripts baixam somente as fontes selecionadas da base fixa e reproduzem a alt
 
 ## Troca sem reinstalar: avaliação e condições
 
-É tecnicamente possível conservar a instalação/configuração e trocar para uma branch própria, **quando base, sistema, dependências, arquivos locais e fluxo de atualização forem reconciliados**. Esta preparação não demonstra que essas condições sejam verdadeiras no aparelho atual.
+É tecnicamente possível conservar a instalação/configuração e trocar para uma branch própria, **quando base, sistema, dependências, arquivos locais e fluxo de atualização forem reconciliados**. As condições do aparelho do proprietário foram auditadas e a instalação em bancada foi realizada conforme o registro acima. Isso não estabelece compatibilidade de outros aparelhos ou veículos.
 
-A base Testing exige **AGNOS 12.8** em launch_env.sh. Seu launch_chffrplus.sh chama o atualizador de AGNOS se /VERSION for diferente e pode reiniciar. Portanto, trocar branch e reiniciar não é necessariamente uma operação apenas de código. A compatibilidade efetiva com o comma 3X do proprietário permanece pendente de auditoria e validação em bancada.
+A base Testing exige **AGNOS 12.8** em launch_env.sh. Seu launch_chffrplus.sh chama o atualizador de AGNOS se /VERSION for diferente e pode reiniciar. Portanto, trocar branch e reiniciar não é necessariamente uma operação apenas de código. O boot 12.8, os serviços em bancada e a Panda foram observados no comma 3X do proprietário. Condução e reconhecimento com ECUs reais continuam pendentes nesta candidata.
 
 Antes de qualquer ativação:
 1. Confirmar identidade SSH por canal confiável, hardware, /VERSION, slot, instalação efetiva, commit/branch/remotes, alterações e arquivos não rastreados.
