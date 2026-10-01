@@ -1,0 +1,934 @@
+{
+  "base": "728f654727be9ecb71c16d95bd869ed051bb147f",
+  "branch": "FrogPilot-Testing",
+  "catalogues": 14,
+  "platforms": 216,
+  "firmware_evidence": "Six address/version pairs reconstructed from public PR #322; not a fresh ECU query or replay of the complete private 17-response inventory.",
+  "matching_execution": "Real pinned catalogue/schema/config imports; five unchanged functions selected via AST. This is not a full runtime import/startup test.",
+  "passed": 182,
+  "failed": 0,
+  "successful_addition_subsets": [
+    63
+  ],
+  "candidate_blob": "564c5b5740835f5cd054e2814a3d6d2914603596",
+  "candidate_sha256": "9936d586b4e95c98e8972f940ff66e8edf5d4443d5ff369ea67a08c7062d7100",
+  "results": [
+    {
+      "test": "baseline_no_exact_match",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "candidate_unique_exact",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "candidate_generic_fuzzy_unique",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "combined_prefers_exact",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "logging_only_responses_ignored",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "firmware_subset_0",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "firmware_subset_1",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "firmware_subset_2",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "firmware_subset_3",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "firmware_subset_4",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "firmware_subset_5",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "firmware_subset_6",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "firmware_subset_7",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "firmware_subset_8",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "firmware_subset_9",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "firmware_subset_10",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "firmware_subset_11",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "firmware_subset_12",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "firmware_subset_13",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "firmware_subset_14",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "firmware_subset_15",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "firmware_subset_16",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "firmware_subset_17",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "firmware_subset_18",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "firmware_subset_19",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "firmware_subset_20",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "firmware_subset_21",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "firmware_subset_22",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "firmware_subset_23",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "firmware_subset_24",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "firmware_subset_25",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "firmware_subset_26",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "firmware_subset_27",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "firmware_subset_28",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "firmware_subset_29",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "firmware_subset_30",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "firmware_subset_31",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "firmware_subset_32",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "firmware_subset_33",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "firmware_subset_34",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "firmware_subset_35",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "firmware_subset_36",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "firmware_subset_37",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "firmware_subset_38",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "firmware_subset_39",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "firmware_subset_40",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "firmware_subset_41",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "firmware_subset_42",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "firmware_subset_43",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "firmware_subset_44",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "firmware_subset_45",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "firmware_subset_46",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "firmware_subset_47",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "firmware_subset_48",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "firmware_subset_49",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "firmware_subset_50",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "firmware_subset_51",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "firmware_subset_52",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "firmware_subset_53",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "firmware_subset_54",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "firmware_subset_55",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "firmware_subset_56",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "firmware_subset_57",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "firmware_subset_58",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "firmware_subset_59",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "firmware_subset_60",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "firmware_subset_61",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "firmware_subset_62",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "firmware_subset_63",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "unknown_eps_rejects_exact",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "unknown_eps_fuzzy_no_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "missing_terminator_eps_rejects_exact",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "unknown_gateway_rejects_exact",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "unknown_gateway_fuzzy_no_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "missing_terminator_gateway_rejects_exact",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "unknown_srs_rejects_exact",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "unknown_srs_fuzzy_no_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "missing_terminator_srs_rejects_exact",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "unknown_fwdRadar_rejects_exact",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "unknown_fwdRadar_fuzzy_no_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "missing_terminator_fwdRadar_rejects_exact",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "unknown_vsa_rejects_exact",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "unknown_vsa_fuzzy_no_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "missing_terminator_vsa_rejects_exact",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "unknown_transmission_rejects_exact",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "unknown_transmission_fuzzy_no_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "missing_terminator_transmission_rejects_exact",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "partial_inventory_0_no_new_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "partial_inventory_1_no_new_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "partial_inventory_2_no_new_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "partial_inventory_3_no_new_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "partial_inventory_4_no_new_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "partial_inventory_5_no_new_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "partial_inventory_6_no_new_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "partial_inventory_7_no_new_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "partial_inventory_8_no_new_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "partial_inventory_9_no_new_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "partial_inventory_10_no_new_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "partial_inventory_11_no_new_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "partial_inventory_12_no_new_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "partial_inventory_13_no_new_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "partial_inventory_14_no_new_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "partial_inventory_15_no_new_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "partial_inventory_16_no_new_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "partial_inventory_17_no_new_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "partial_inventory_18_no_new_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "partial_inventory_19_no_new_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "partial_inventory_20_no_new_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "partial_inventory_21_no_new_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "partial_inventory_22_no_new_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "partial_inventory_23_no_new_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "partial_inventory_24_no_new_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "partial_inventory_25_no_new_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "partial_inventory_26_no_new_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "partial_inventory_27_no_new_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "partial_inventory_28_no_new_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "partial_inventory_29_no_new_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "partial_inventory_30_no_new_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "partial_inventory_31_no_new_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "partial_inventory_32_no_new_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "partial_inventory_33_no_new_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "partial_inventory_34_no_new_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "partial_inventory_35_no_new_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "partial_inventory_36_no_new_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "partial_inventory_37_no_new_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "partial_inventory_38_no_new_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "partial_inventory_39_no_new_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "partial_inventory_40_no_new_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "partial_inventory_41_no_new_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "partial_inventory_42_no_new_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "partial_inventory_43_no_new_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "partial_inventory_44_no_new_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "partial_inventory_45_no_new_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "partial_inventory_46_no_new_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "partial_inventory_47_no_new_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "partial_inventory_48_no_new_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "partial_inventory_49_no_new_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "partial_inventory_50_no_new_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "partial_inventory_51_no_new_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "partial_inventory_52_no_new_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "partial_inventory_53_no_new_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "partial_inventory_54_no_new_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "partial_inventory_55_no_new_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "partial_inventory_56_no_new_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "partial_inventory_57_no_new_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "partial_inventory_58_no_new_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "partial_inventory_59_no_new_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "partial_inventory_60_no_new_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "partial_inventory_61_no_new_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "partial_inventory_62_no_new_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "partial_inventory_63_no_new_other_platform",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "preserve_catalogue_HONDA_NBOX_2G",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "preserve_catalogue_HONDA_ACCORD",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "preserve_catalogue_HONDA_CIVIC",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "preserve_catalogue_HONDA_CIVIC_BOSCH",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "preserve_catalogue_HONDA_CIVIC_BOSCH_DIESEL",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "preserve_catalogue_HONDA_CRV",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "preserve_catalogue_HONDA_CRV_5G",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "preserve_catalogue_HONDA_CRV_EU",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "preserve_catalogue_HONDA_CRV_HYBRID",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "preserve_catalogue_HONDA_FIT",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "preserve_catalogue_HONDA_FREED",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "preserve_catalogue_ACURA_MDX_4G_MMR",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "preserve_catalogue_HONDA_ODYSSEY",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "preserve_catalogue_HONDA_ODYSSEY_5G_MMR",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "preserve_catalogue_HONDA_PILOT",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "preserve_catalogue_ACURA_RDX",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "preserve_catalogue_ACURA_RDX_3G",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "preserve_catalogue_HONDA_RIDGELINE",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "preserve_catalogue_HONDA_INSIGHT",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "preserve_catalogue_HONDA_HRV",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "preserve_catalogue_HONDA_HRV_3G",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "preserve_catalogue_ACURA_ILX",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "preserve_catalogue_HONDA_E",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "preserve_catalogue_HONDA_CIVIC_2022",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "preserve_catalogue_HONDA_PILOT_4G",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "preserve_catalogue_HONDA_ACCORD_11G",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "preserve_catalogue_HONDA_CRV_6G",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "preserve_catalogue_HONDA_CITY_7G",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "preserve_catalogue_HONDA_PASSPORT_4G",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "preserve_catalogue_ACURA_TLX_2G",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "six_additions_zero_deletions",
+      "passed": true,
+      "details": null
+    }
+  ],
+  "limitations": [
+    "No full Linux/ARM64 CI or runtime build",
+    "No installed-device audit: SSH identity changed and awaiting confirmation",
+    "No on-car validation",
+    "Brand-specific fuzzy functions only exercised if selected by combined matcher; no exhaustive fuzzy fallback suite",
+    "Testing launcher requests AGNOS 12.8; no installation or AGNOS change authorized by test result"
+  ]
+}
